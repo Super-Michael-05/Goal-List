@@ -1,10 +1,97 @@
 <!DOCTYPE html>
+<!-- 18:15 -->
 <html>
 	<head>
-		<title>Home</title>
+		<title>Goals</title>
 		<script src="main.js"></script>
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap" rel="stylesheet">
 	</head>
 	<body>
+		<h1 class="title">Goals</h1>
+		
+		<div class="all-tasks">
+			<h2 class="task-list-title">My goals</h2>
+			<ul class="task-list">
+				<li class="active-list">Read</li>
+				<li>School</li>
+				<li>Programming</li>
+				<li>Fiverr</li>
+				<li>Youtube</li>
+			</ul>
+			
+			<form action="">
+				<input
+					 type="text"
+					 class="new list"
+					 placeholder="new goal name"
+					 aria-label="new goal name"	
+				/>
+			<button class="btn list" aria-label="create new goal">+</button>
+			</form>
+		</div>
+		
+		<div class="todo-list">
+			<div class="todo-header">
+				<h2 class="list-title">Read</h2>	
+				<p class="task-count">51 tasks remaining</p>
+			</div>
+			
+			<div class="todo-body">
+				<div class="tasks">
+					<div class="task">
+						<input
+							type="checkbox"
+							id="task-1"
+						/>
+						<label for="task-1">
+							<span class="custom-checkbox">
+							</span>
+							Read one book
+						</label>
+					</div>
+					<!-- /task-1 -->
+					<div class="task">
+						<input
+							type="checkbox"
+							id="task-2"
+						/>
+						<label for="task-2">
+							<span class="custom-checkbox">
+							</span>
+							Read one book
+						</label>
+					</div>
+					<!-- /task-2 -->
+					<div class="task">
+						<input
+							type="checkbox"
+							id="task-3"
+						/>
+						<label for="task-3">
+							<span class="custom-checkbox">
+							</span>
+							Read one book
+						</label>
+					</div>
+					<!-- /task-3 -->
+				</div>
+				<div class="new-task-creator">
+					<form action="">
+						<input
+							type="text"
+							class="new list"
+							placeholder="new task name"
+							aria-label="new task name"	
+						/>
+						<button class="btn task" aria-label="create new task">+</button>
+					</form>
+				</div>
+				<div class="delete-stuff">
+					<button class="btn delete">Clear completed tasks</button>
+					<button class="btn delete">Delete list</button>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
